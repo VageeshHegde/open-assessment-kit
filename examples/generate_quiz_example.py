@@ -1,6 +1,6 @@
 """Example: generate a quiz with the open-source SDK (no Google publish)."""
 
-from quizpublish import OpenAIProvider, generate_quiz
+from open_assessment_kit import OpenAIProvider, generate_quiz
 
 
 def main() -> None:

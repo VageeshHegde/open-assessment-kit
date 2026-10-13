@@ -2,8 +2,8 @@ from __future__ import annotations
 
 from pydantic import ValidationError
 
-from quizpublish.llm.base import LLMProvider
-from quizpublish.models import CHOICE_TYPES, QuestionType, QuizQuestionSet
+from open_assessment_kit.llm.base import LLMProvider
+from open_assessment_kit.models import CHOICE_TYPES, QuestionType, QuizQuestionSet
 
 
 def build_generation_prompt(
@@ -70,7 +70,7 @@ def generate_quiz(
     Generate a structured quiz using any LLMProvider.
 
     Example:
-        from quizpublish import OpenAIProvider, generate_quiz
+        from open_assessment_kit import OpenAIProvider, generate_quiz
         quiz = generate_quiz("Python", 5, "Multiple Choice", OpenAIProvider())
     """
     prompt = build_generation_prompt(topic, num_questions, question_type)

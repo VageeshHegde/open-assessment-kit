@@ -4,13 +4,13 @@ from typing import Any
 
 from googleapiclient.discovery import build
 
-from quizpublish.models import (
+from open_assessment_kit.models import (
     CHOICE_TYPES,
     GOOGLE_CHOICE_TYPE,
     QuestionType,
     QuizQuestionSet,
 )
-from quizpublish.publishers.base import PublishResult
+from open_assessment_kit.publishers.base import PublishResult
 
 
 class GoogleFormsPublisher:

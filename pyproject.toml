@@ -3,13 +3,13 @@ requires = ["setuptools>=61"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "quizpublish"
+name = "open-assessment-kit"
 version = "0.1.0"
 description = "AI quiz generation + multi-provider form publishing SDK"
 readme = "README.md"
 requires-python = ">=3.10"
 license = { text = "MIT" }
-authors = [{ name = "QuizPublish contributors" }]
+authors = [{ name = "Open Assessment Kit contributors" }]
 dependencies = [
   "openai>=1.0",
   "pydantic>=2.0",
@@ -21,4 +21,4 @@ dependencies = [
 dev = ["streamlit", "python-dotenv", "google-auth-oauthlib"]
 
 [tool.setuptools.packages.find]
-include = ["quizpublish*"]
+include = ["open_assessment_kit*"]

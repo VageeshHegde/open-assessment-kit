@@ -1,4 +1,4 @@
-# quizpublish
+# open-assessment-kit
 
 Open-source SDK: generate structured quizzes with any LLM, publish to form providers (Google Forms first; more later).
 
@@ -6,12 +6,13 @@ Open-source SDK: generate structured quizzes with any LLM, publish to form provi
 
 ```bash
 pip install -e .
+# or: pip install open-assessment-kit
 ```
 
 ## Quick start
 
 ```python
-from quizpublish import OpenAIProvider, generate_quiz, GoogleFormsPublisher
+from open_assessment_kit import OpenAIProvider, generate_quiz, GoogleFormsPublisher
 
 llm = OpenAIProvider(model="gpt-4o-mini")  # or plug in your own LLMProvider
 quiz = generate_quiz("Python", 5, "Multiple Choice", llm)
